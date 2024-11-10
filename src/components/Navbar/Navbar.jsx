@@ -13,7 +13,7 @@ const Navbar = ({ handleOrderPopup }) => {
             <img src={assets.logo} alt="logo" className='logo' />
           
             <ul className="navbar-menu">
-              <li onClick={()=>setMenu("home")} className={menu ==="home"?"active":""}>Home</li>
+              <li onClick={()=>setMenu("home")} className={menu ==="home"?"active":""}>Acceuil</li>
               <li onClick={()=>setMenu("femme")} className={menu ==="femme"?"active":""}>Femme</li>
               <li onClick={()=>setMenu("homme")} className={menu ==="homme"?"active":""}>Homme</li>
               <li onClick={()=>setMenu("contact")} className={menu ==="contact"?"active":""}>Contactez-Nous</li>
@@ -26,7 +26,7 @@ const Navbar = ({ handleOrderPopup }) => {
               />
                <IoMdSearch className="" />
               <Link to="/signup" className="signup-btn">
-              <button  className="login-btn">S'inscrire</button>
+              <button  className="signup-btn">S'inscrire</button>
               </Link> 
               <button onClick={handleOrderPopup} className="cart-btn">
                <span className="cart-text">Panier</span>

@@ -78,6 +78,16 @@
   font-weight: bold;
   cursor: pointer;
 }
+.signup-btn{
+  background: linear-gradient(90deg, #ea5003d2, #141312);
+  border: none;
+  color:white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
 
 .cart-btn {
   background: linear-gradient(90deg, #f1a343d2, #f19d26); /* Gradient from primary to secondary */
