@@ -1,0 +1,115 @@
+/* Navbar.css */
+.navbar-container {
+  position: relative;
+  z-index: 40;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.navbar-background {
+  background-color: rgba(234, 143, 39, 0.25); /* Primary color with 40% opacity */
+  padding: 10px 0;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo-container {
+  font-weight: bold;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  max-width: 60px; /* Adjust the size as needed */
+}
+
+.search-cart-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-bar-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 200px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: width 0.3s ease-in-out;
+}
+
+.search-input:focus {
+  width: 300px;
+  border-color: #007bff; /* Primary color */
+}
+
+.search-icon {
+  position: absolute;
+  right: 12px;
+  color: #555;
+  transition: color 0.3s ease-in-out;
+}
+
+.search-bar-container:hover .search-icon {
+  color: #007bff; /* Primary color */
+}
+
+.login-cart {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.login-btn {
+  background: none;
+  border: none;
+  color:#f1a343d2;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cart-btn {
+  background: linear-gradient(90deg, #f1a343d2, #f19d26); /* Gradient from primary to secondary */
+  color: white;
+  padding: 6px 16px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.cart-text {
+  display: none;
+  transition: display 0.2s ease-in-out;
+}
+
+.cart-btn:hover .cart-text {
+  display: block;
+}
+
+.cart-icon {
+  font-size: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .search-bar-container {
+    display: block;
+  }
+}
