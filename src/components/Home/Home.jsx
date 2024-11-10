@@ -4,6 +4,7 @@ import Image2 from "../../assets/Home/shopping.png";
 import Image3 from "../../assets/Home/sale.png";
 import './Home.css'; 
 
+
 const ImageList = [
   {
     id: 1,
@@ -53,13 +54,20 @@ const Home = () => {
                 <h1 className="header_title">{data.title}</h1>
                 <p className="header_description">{data.description}</p>
                 <button className="btn">Voir Article</button>
+                
               </div>
+              
             </div>
           ))}
+         
         </div>
+       
       </div>
+      
     </div>
+    
   );
+  
 };
 
 export default Home;
