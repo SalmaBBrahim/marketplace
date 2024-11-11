@@ -10,6 +10,8 @@ import './App.css';
 import Login from './components/Login/Login';
 import { auth } from './firebase/firebase';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Populaire from './components/Populaire/Populaire';
+import Footer from './components/Footer/Footer';
 
 
 const App = () => {
@@ -53,6 +55,8 @@ const App = () => {
           <Route path="/signup" element={<SignUp />} /> {/* Route pour SignUp */}
         </Routes>
         <Toaster /> {/* Affichez le Toaster pour les notifications */}
+    <Populaire/>
+<Footer/>
       </Router>
     </div>
   );
